@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranny's weather application</title>
+    <link rel="stylesheet" href="components/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="weather-card">
+      <div class="title">
+        <div class="text-title">
+          <div class="rannys">Ranny's</div>
+          <div class="weather-title">Weather</div>
+        </div>
+        <div class="title-icon">
+          <img
+            class="sun-svg"
+            src="components/image/sun-svgrepo-com.svg"
+            alt="sun"
+          />
+        </div>
+      </div>
+
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Enter country/city name"
+          class="search-bar"
+          spellcheck="false"
+          required
+        />
+        <button class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="weather-display">
+        <div class="when-where">
+          <div class="city"></div>
+          <div class="clock"></div>
+        </div>
+        <div class="date-display"></div>
+        <div class="icon-and-temp">
+          <img src="" alt="" class="weather-icon" />
+          <div class="temp-weather">
+            <h3 class="temp"></h3>
+            <h3 class="weather-name">Cloudy</h3>
+          </div>
+        </div>
+        <div class="in4">
+          <div class="category real-feel">
+            <i class="fa-solid fa-temperature-half"></i>
+            <div class="realfeel-info">
+              <h4>Feels like</h4>
+              <p id="feel"></p>
+            </div>
+          </div>
+          <div class="category wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="wind-info">
+              <h4>Wind</h4>
+              <p id="windy"></p>
+            </div>
+          </div>
+
+          <div class="category humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="humidity-info">
+              <h4>Humidity</h4>
+              <p id="humid"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="components/script.js"></script>
+  </body>
+</html>
